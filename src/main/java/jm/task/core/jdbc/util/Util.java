@@ -35,8 +35,8 @@ public class Util {
             configuration.setProperty("hibernate.connection.password", PASSWORD);
             configuration.addAnnotatedClass(User.class);
 
-            configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
-            configuration.setProperty("hibernate.hbm2ddl.auto", "update");
+            configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+            configuration.setProperty("hibernate.hbm2ddl.auto", "create-drop");
             configuration.setProperty("hibernate.current_session_context_class", "thread");
             configuration.setProperty("hibernate.show_sql", "true");
 
